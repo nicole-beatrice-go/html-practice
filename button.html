@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <button id="yes-or-no-not-by-twice"> press here for yes or no </button><p id="answer"></p>
+        <script>
+            var targeted = document.getElementById("yes-or-no-not-by-twice")
+            targeted.addEventListener("click", function(){
+                var randint = Math.round(Math.random())
+                var targeted_answer = document.getElementById("answer")
+                if (randint == 0){
+                    targeted_answer.innerHTML = "no"
+                }
+                else{
+                    targeted_answer.innerHTML = "yes"
+                }
+            })
+
+        </script>
+    </body>
+</html>
